@@ -1,87 +1,51 @@
-* {
-  box-sizing: border-box;
-}
-
 body {
   font-family: 'Segoe UI', sans-serif;
-  background-color: #f7f7f7;
+  background-color: #f4f4f4;
+  color: #333;
+  padding: 2rem;
 }
 
-.container {
-  max-width: 400px;
-  margin: 30px auto;
-  padding: 20px;
-  background: #fff;
+body.dark-mode {
+  background-color: #121212;
+  color: #f4f4f4;
+}
+
+.tracker-container {
+  max-width: 600px;
+  margin: auto;
+  background: white;
+  padding: 1.5rem;
   border-radius: 10px;
-  box-shadow: 0 0 10px #ccc;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
 }
 
-h1, h2, h3, h4 {
-  margin: 0;
-  text-align: center;
+input, select, button {
+  width: 100%;
+  margin: 0.5rem 0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
 }
 
-.balance {
-  margin: 20px 0;
-}
-
-.inc-exp-container {
-  display: flex;
-  justify-content: space-between;
-  margin: 20px 0;
-}
-
-.money {
-  font-size: 20px;
-}
-
-.plus {
-  color: green;
-}
-
-.minus {
-  color: red;
-}
-
-.list {
+ul#transaction-list {
   list-style-type: none;
   padding: 0;
-  margin-bottom: 40px;
 }
 
-.list li {
-  background-color: #f1f1f1;
-  padding: 10px;
-  margin: 10px 0;
-  border-right: 5px solid;
+ul#transaction-list li {
   display: flex;
   justify-content: space-between;
-}
-
-.list li.plus {
-  border-color: green;
-}
-
-.list li.minus {
-  border-color: red;
-}
-
-.form-control {
-  margin: 10px 0;
-}
-
-input {
-  width: 100%;
-  padding: 8px;
-  margin-top: 5px;
-}
-
-.btn {
-  width: 100%;
-  padding: 10px;
-  background-color: #333;
-  color: white;
-  border: none;
+  background: #eee;
+  margin-top: 0.5rem;
+  padding: 0.8rem;
   border-radius: 5px;
-  cursor: pointer;
+}
+
+.dark-mode .tracker-container {
+  background-color: #1e1e1e;
+  border: 1px solid #333;
+}
+
+.dark-mode ul#transaction-list li {
+  background-color: #333;
 }
